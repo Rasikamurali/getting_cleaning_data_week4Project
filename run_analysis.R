@@ -1,7 +1,6 @@
 library(plyr)
 
-# THIS WAS COPIED FROM https://github.com/wdluft/getting-and-cleaning-data-week-4-project
-# SHOULD NOT BE ACCEPTED AS A NEW SUBMISSION
+
 
 # Download the dataset
 if(!file.exists("./getcleandata")){dir.create("./getcleandata")}
@@ -80,7 +79,3 @@ unzip(zipfile = "./getcleandata/projectdataset.zip", exdir = "./getcleandata")
         
         # 5.2 Writing second tidy data set into a txt file
         write.table(tidySet, "tidySet.txt", row.names = FALSE)
-        
-
-# THIS WAS COPIED FROM https://github.com/wdluft/getting-and-cleaning-data-week-4-project
-# SHOULD NOT BE ACCEPTED AS A NEW SUBMISSION
